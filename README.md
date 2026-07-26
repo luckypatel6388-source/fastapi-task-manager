@@ -43,43 +43,6 @@ Validation: Pydantic
 
 Server: Uvicorn
 
-🚀 Getting Started
-Step 1: Clone the Repository
-git clone https://github.com/luckypatel6388-source/fastapi-task-manager.git
-cd fastapi-task-manager
-
-Step 2: Set Up Virtual Environment & Dependencies
-Create virtual environment
-python -m venv venv
-
-Activate on Windows
-venv\Scripts\activate
-
-Activate on macOS/Linux
-source venv/bin/activate
-
-Install required packages
-pip install fastapi uvicorn sqlalchemy pymysql pydantic
-
-Step 3: Configure MySQL Connection
-In db_td.py, update your MySQL connection URL:
-
-DATABASE_URL = "mysql+pymysql://:@:/<database_name>"
-
-Example Local MySQL URL:
-mysql+pymysql://root:password123@localhost:3306/todo_db
-
-Step 4: Run the API
-Launch the local development server with auto-reload enabled:
-
-uvicorn todo:app --reload
-
-API Root: http://127.0.0.1:8000
-
-Swagger Interactive Docs: http://127.0.0.1:8000/docs
-
-ReDoc Documentation: http://127.0.0.1:8000/redoc
-
 🔗 Endpoints Summary
 POST /todos/ — Create a new task
 
